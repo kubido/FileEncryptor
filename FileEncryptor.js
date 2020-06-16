@@ -1,7 +1,7 @@
 const crypto = require('crypto')
 const fs = require('fs')
 
-class PdfEncryptor {
+class FileEncryptor {
   constructor(file, password) {
     // PASSWORD and IV can be generated as crypto.randomBytes(32).toString('hex');
 
@@ -41,4 +41,4 @@ class PdfEncryptor {
   }
 }
 
-module.exports = PdfEncryptor
+module.exports = FileEncryptor

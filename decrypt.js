@@ -1,7 +1,7 @@
 
-const PdfEncryptor = require('./PdfEncryptor')
+const FileEncryptor = require('./FileEncryptor')
 
 const password = "bf3c199c2470cb477d907b1e0917c17b"
 
-const store = new PdfEncryptor('./encrypted.pdf', password)
-store.decrypt()
+const file = new FileEncryptor('./encrypted.pdf', password)
+file.decrypt()
